@@ -16,3 +16,5 @@ The image is available in Dockerhub : thshaw/fbctf (The push is currently failin
 ### Usage
 
 docker run -d -p 443:443 thshaw/fbctf
+
+![browser](/screenshot.png)

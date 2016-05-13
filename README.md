@@ -11,10 +11,14 @@ When the database was setup manually then FBCTF was accessible.
 
 I'll fix this up over the weekend to make this a one-liner to run.
 
-The image is available in Dockerhub : thshaw/fbctf (The push is currently failing.  One of the layers is 788mb and timing out.  Will push tomorrow.)
+The image is available in Dockerhub : thshaw/fbctf 
 
 ### Usage
 
-docker run -d -p 443:443 thshaw/fbctf
+docker build -t fbctf .
+
+Login to setup DB manually for now :
+
+docker run -it -p 443:443 --entrypoint /bin/bash fbctf
 
 ![browser](/screenshot.png)
